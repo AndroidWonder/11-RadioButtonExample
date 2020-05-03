@@ -24,7 +24,7 @@ public class CustomAdapter extends BaseAdapter {
         this.context = applicationContext;
         this.questionsList = questionsList;
 
-        // initialize arraylist and add static string for all the questions
+        // initialize ArrayList for with the questions
         selectedAnswers = new ArrayList<String>();
         for (int i = 0; i < questionsList.size(); i++) {
             selectedAnswers.add("No Answer");
@@ -71,7 +71,6 @@ public class CustomAdapter extends BaseAdapter {
                 // set No values in ArrayList if RadioButton is checked
                 if (isChecked)
                     selectedAnswers.set(position, "No");
-
             }
         });
 
