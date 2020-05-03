@@ -37,17 +37,17 @@ public class CustomAdapter extends BaseAdapter {
     }
 
     @Override
-    public Object getItem(int i) {
+    public Object getItem(int position) {
         return null;
     }
 
     @Override
-    public long getItemId(int i) {
+    public long getItemId(int position) {
         return 0;
     }
 
     @Override
-    public View getView(final int i, View view, ViewGroup viewGroup) {
+    public View getView(final int position, View view, ViewGroup viewGroup) {
        view =  LayoutInflater.from(this.context).inflate(R.layout.rows, null);
 
         TextView question = (TextView) view.findViewById(R.id.question);
@@ -60,7 +60,7 @@ public class CustomAdapter extends BaseAdapter {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
             // set Yes values in ArrayList if RadioButton is checked
                 if (isChecked)
-                    selectedAnswers.set(i, "Yes");
+                    selectedAnswers.set(position, "Yes");
             }
         });
 
@@ -70,13 +70,13 @@ public class CustomAdapter extends BaseAdapter {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 // set No values in ArrayList if RadioButton is checked
                 if (isChecked)
-                    selectedAnswers.set(i, "No");
+                    selectedAnswers.set(position, "No");
 
             }
         });
 
         // set the value in TextView
-        question.setText(questionsList.get(i));
+        question.setText(questionsList.get(position));
         return view;
     }
 }
