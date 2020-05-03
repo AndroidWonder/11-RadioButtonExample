@@ -54,7 +54,7 @@ public class CustomAdapter extends BaseAdapter {
         RadioButton yes = (RadioButton) view.findViewById(R.id.yes);
         RadioButton no = (RadioButton) view.findViewById(R.id.no);
 
-        // perform setOnCheckedChangeListener event on yes button
+        //put setOnCheckedChangeListener event on yes button
         yes.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -64,7 +64,7 @@ public class CustomAdapter extends BaseAdapter {
             }
         });
 
-        // perform setOnCheckedChangeListener event on no button
+        //put setOnCheckedChangeListener event on no button
         no.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
