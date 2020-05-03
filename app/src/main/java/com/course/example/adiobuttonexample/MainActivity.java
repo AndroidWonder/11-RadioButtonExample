@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         questions.add("Do you have Aerosmith's latest album?");
         questions.add("Are you ready for dinner yet?");
         questions.add("Do you want the door open?");
+        questions.add("Want to take a walk later?");
 
         simpleList = (ListView) findViewById(R.id.simpleListView);
         submit = (Button) findViewById(R.id.submit);
