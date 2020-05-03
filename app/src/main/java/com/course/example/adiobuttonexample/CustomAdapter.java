@@ -24,7 +24,7 @@ public class CustomAdapter extends BaseAdapter {
         this.context = applicationContext;
         this.questionsList = questionsList;
 
-        // initialize ArrayList for with the questions
+        // initialize ArrayList with answers for the questions
         selectedAnswers = new ArrayList<String>();
         for (int i = 0; i < questionsList.size(); i++) {
             selectedAnswers.add("No Answer");
