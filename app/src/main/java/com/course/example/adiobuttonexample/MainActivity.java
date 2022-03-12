@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         actionBar.setDisplayShowTitleEnabled(false);
         actionBar.setDisplayUseLogoEnabled(false);
 
+        //create ArrayList and add data
         questions = new ArrayList<String>();
         questions.add("Do you have Aerosmith's latest album?");
         questions.add("Are you ready for dinner yet?");
